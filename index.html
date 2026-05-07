@@ -4,13 +4,13 @@
     <meta charset="UTF-8">                                                      
     <meta name="viewport" content="width=device-width, initial-scale=1.0">      
     <title>Echoes of Aratta</title>                                             
-    <style>                                                 
-      * { margin: 0; padding: 0; box-sizing: border-box; }
+    <style>                                                                     
+      * { margin: 0; padding: 0; box-sizing: border-box; }                      
       body {                                                                    
-        background: #1a1208;
-        color: #f0e6c8;                                                         
-        font-family: Georgia, serif;                        
-        padding: 40px 20px;
+        background: #1a1208;                                                    
+        color: #f0e6c8;                       
+        font-family: Georgia, serif;                                            
+        padding: 40px 20px;                                 
       }                                                                         
       h1 {                                
         text-align: center;                                                     
@@ -18,99 +18,198 @@
         color: #c8902a;
         margin-bottom: 8px;                                                     
         letter-spacing: 2px;                                
-      }                                       
+      }
       .subtitle {                                                               
         text-align: center;
         font-size: 1em;                                                         
         color: #a89060;                                     
-        margin-bottom: 40px;                                                    
-      }                                                     
-      .grid {                             
+        margin-bottom: 40px;              
+      }
+      .grid {                                                                   
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));            
-        gap: 24px;
-        max-width: 1100px;                                                      
-        margin: 0 auto;                                     
+        gap: 24px;                                          
+        max-width: 1100px;                
+        margin: 0 auto;
+      }                                                                         
+      .card {
+        background: #2a1f0e;                                                    
+        border: 1px solid #c8902a33;                        
+        border-radius: 12px;                  
+        overflow: hidden;                 
       }
-      .card {                                                                   
-        background: #2a1f0e;
-        border: 1px solid #c8902a33;                                            
-        border-radius: 12px;                                
-        overflow: hidden;
-      }                                                                         
-      .card img {                             
-        width: 100%;                                                            
-        height: 420px;                                      
-        object-fit: cover;                                                      
-        background: #3a2a10;
-        display: block;                                                         
-      }                                                     
-      .placeholder {
-        width: 100%;                                                            
-        height: 420px;
-        background: #3a2a10;                                                    
-        display: flex;                                      
-        align-items: center;              
-        justify-content: center;
-        color: #a89060;                                                         
-        font-size: 0.9em;
-      }                                                                         
-      .caption {                                            
-        padding: 12px 16px;                   
-        font-size: 0.85em;                
-        color: #c8b080;
-        text-align: center;                                                     
-      }                                   
-      .team {                                                                   
-        text-align: center;                                                     
-        margin-top: 48px;
-        color: #a89060;                                                         
-        font-size: 0.9em;                                   
+      .card img {                                                               
+        width: 100%;
+        height: 420px;                                                          
+        object-fit: cover;                                  
+        object-position: top;
+        background: #3a2a10;                  
+        display: block;                   
+      }
+      .caption {                                                                
+        padding: 12px 16px;
+        font-size: 0.85em;                                                      
+        color: #c8b080;                                     
+        text-align: center;
       }                                       
-    </style>                              
+      .team {                             
+        text-align: center;
+        margin-top: 48px;                                                       
+        color: #a89060;
+        font-size: 0.9em;                                                       
+      }                                                     
+    </style>
   </head>
-  <body>                                                                        
-    <h1>Echoes of Aratta</h1>
-    <p class="subtitle">An adaptive educational strategy game for Armenian      
-  history</p>                                               
-                                          
-    <div class="grid">                        
-      <div class="card">                                                        
-        <div class="placeholder">Screenshot 1</div>
-        <div class="caption">World Map — GIS province overview</div>            
-      </div>                                                
-      <div class="card">                                                        
-        <div class="placeholder">Screenshot 2</div>         
-        <div class="caption">Province Detail — history & development</div>      
-      </div>                                  
-      <div class="card">                                                        
-        <div class="placeholder">Screenshot 3</div>         
-        <div class="caption">Adaptive Quiz — IRT question overlay</div>         
-      </div>                              
-      <div class="card">                                                        
-        <div class="placeholder">Screenshot 4</div>                             
-        <div class="caption">Royal Council — pending events</div>
-      </div>                                                                    
-      <div class="card">                                    
-        <div class="placeholder">Screenshot 5</div>                             
-        <div class="caption">Battle Screen — tactical decisions</div>
-      </div>                                                                    
+  <body>                                      
+    <h1>Echoes of Aratta</h1>             
+    <p class="subtitle">An adaptive educational strategy game for Armenian
+  history</p>                                                                   
+   
+    <div class="grid">                                                          
+                                                            
       <div class="card">
-        <div class="placeholder">Screenshot 6</div>                             
-        <div class="caption">War Declaration — diplomatic options</div>
-      </div>
+        <img src="images/splashscreen.png" alt="Splash Screen">
+        <div class="caption">Splash screen on app launch</div>
+      </div>                              
+
       <div class="card">                                                        
-        <div class="placeholder">Screenshot 7</div>
-        <div class="caption">Legacy Screen — end of reign</div>                 
+        <img src="images/sign_in.png" alt="Sign In">
+        <div class="caption">Sign in / register to save your progress</div>     
       </div>                                                
-      <div class="card">                                                        
-        <div class="placeholder">Screenshot 8</div>
-        <div class="caption">Leaderboard — global rankings</div>                
+                                          
+      <div class="card">
+        <img src="images/era_selection.png" alt="Era Selection">                
+        <div class="caption">Choose your historical era</div>
       </div>                                                                    
-    </div>
+                                                            
+      <div class="card">                  
+        <img src="images/leader_selection.png" alt="Leader Selection">
+        <div class="caption">Select a real Armenian historical leader</div>     
+      </div>
                                                                                 
-    <div class="team">                                      
-      <p>Capstone Project · 2026</p>
+      <div class="card">                                    
+        <img src="images/confirmation_step.png" alt="Confirmation">
+        <div class="caption">Confirm your leader and difficulty before the reign
+   begins</div>                           
+      </div>
+                                                                                
+      <div class="card">
+        <img src="images/mapscreen.png" alt="Map Screen">                       
+        <div class="caption">Live province map of the Armenian highlands</div>
+      </div>                              
+
+      <div class="card">                                                        
+        <img src="images/profile_right_panel.png" alt="Profile Panel">
+        <div class="caption">Ruler stats and kingdom overview</div>             
+      </div>                                                
+                                          
+      <div class="card">
+        <img src="images/leader_bio.png" alt="Leader Bio">                      
+        <div class="caption">Historical biography of your chosen leader</div>
+      </div>                                                                    
+                                                            
+      <div class="card">                      
+        <img src="images/tutorial.png" alt="Tutorial">
+        <div class="caption">In-game tutorial for new players</div>
+      </div>                                                                    
+   
+      <div class="card">                                                        
+        <img src="images/battle_beggining.png" alt="Battle Beginning">
+        <div class="caption">War declared — battle begins</div>
+      </div>                              
+
+      <div class="card">                                                        
+        <img src="images/battle_process.png" alt="Battle Process">
+        <div class="caption">Tactical battle rounds with morale tracking</div>  
+      </div>                                                
+                                          
+      <div class="card">
+        <img src="images/ai_decision_assesment.png" alt="AI Decision            
+  Assessment">
+        <div class="caption">AI evaluates your military decision with historical
+   context</div>                                            
+      </div>                              
+
+      <div class="card">                                                        
+        <img src="images/negotiation.png" alt="Negotiation">
+        <div class="caption">Negotiate peace — ceasefire, tribute, or           
+  vassalage</div>                                           
+      </div>
+                                              
+      <div class="card">                  
+        <img src="images/war_banner+tribute_visualization.png" alt="War Banner">
+        <div class="caption">War status banner and tribute outcome</div>        
+      </div>
+                                                                                
+      <div class="card">                                    
+        <img src="images/offer_tribute.png" alt="Offer Tribute">
+        <div class="caption">Offer tribute to end a war on your terms</div>
+      </div>                                                                    
+   
+      <div class="card">                                                        
+        <img src="images/province_management.png" alt="Province Management">
+        <div class="caption">Develop provinces — economy, military,
+  culture</div>                           
+      </div>
+                                                                                
+      <div class="card">
+        <img src="images/province_history.png" alt="Province History">          
+        <div class="caption">Historical background and strategic context of a
+  province</div>                              
+      </div>                              
+
+      <div class="card">                                                        
+        <img src="images/quiz_view.png" alt="Quiz View">
+        <div class="caption">Adaptive quiz — IRT-powered knowledge trial</div>  
+      </div>                                                
+                                          
+      <div class="card">
+        <img src="images/expandable_fab.png" alt="Expandable FAB">              
+        <div class="caption">Quick-access action menu on the map</div>
+      </div>                                                                    
+                                                            
+      <div class="card">                  
+        <img src="images/war_event.png" alt="War Event">
+        <div class="caption">AI-generated war event narrative</div>             
+      </div>
+                                                                                
+      <div class="card">                                    
+        <img src="images/notification.png" alt="Notification">
+        <div class="caption">In-game notification — ruler health or kingdom
+  alert</div>                             
+      </div>
+                                                                                
+      <div class="card">
+        <img src="images/council_message.png" alt="Council Message">            
+        <div class="caption">Royal council event — AI-generated advisory
+  decision</div>                          
+      </div>
+                                                                                
+      <div class="card">
+        <img src="images/chronicle.png" alt="Chronicle">                        
+        <div class="caption">Personal chronicle — every decision logged</div>
+      </div>                                  
+                                          
+      <div class="card">
+        <img src="images/leaderboard.png" alt="Leaderboard">                    
+        <div class="caption">Global leaderboard — compare reigns across
+  players</div>                                                                 
+      </div>                                                
+                                              
+      <div class="card">                  
+        <img src="images/victory_screen.png" alt="Victory Screen">
+        <div class="caption">Victory — province conquered, legacy secured</div> 
+      </div>
+                                                                                
+      <div class="card">                                    
+        <img src="images/defeat_screen.png" alt="Defeat Screen">
+        <div class="caption">Defeat — your reign ends, legacy recorded</div>
+      </div>                              
+
+    </div>                                                                      
+   
+    <div class="team">                                                          
+      <p>Capstone Project · 2026</p>                        
     </div>                                    
   </body>                                 
   </html>
